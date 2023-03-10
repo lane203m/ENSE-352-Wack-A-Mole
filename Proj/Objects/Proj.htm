@@ -1,0 +1,174 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Objects\Proj.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Objects\Proj.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6140002: Last Updated: Sun Dec  6 17:31:15 2020
+<BR><P>
+<H3>Maximum Stack Usage =          0 bytes + Unknown(Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[0]">Reset_Handler</a> from proj.o(MYCODE) referenced from proj.o(RESET)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Calls]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigGPIO
+<LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigClock
+<LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Loser
+<LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Winner
+<LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NormalGameplay
+<LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StandBy
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> proj.o(RESET)
+</UL><P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[1]"></a>StandBy</STRONG> (Thumb, 160 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Calls]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;counter
+<LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LEDOFF
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLED4
+<LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLED3
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLED2
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLED1
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetButtonPressed
+<LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetGPIOODRLDR
+</UL>
+<BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[2]"></a>NormalGameplay</STRONG> (Thumb, 366 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Calls]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;randomNumber
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;counter
+<LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LEDOFF
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UnsetLED4
+<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UnsetLED3
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UnsetLED2
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UnsetLED1
+<LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLEDS
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetButtonPressed
+<LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetGPIOODRLDR
+</UL>
+<BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[3]"></a>Winner</STRONG> (Thumb, 116 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Calls]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;randomNumber
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;counter
+<LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LEDOFF
+<LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLEDS
+</UL>
+<BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[4]"></a>Loser</STRONG> (Thumb, 162 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Calls]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;counter
+<LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LEDOFF
+<LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLEDS
+</UL>
+<BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[5]"></a>SetGPIOODRLDR</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NormalGameplay
+<LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StandBy
+</UL>
+
+<P><STRONG><a name="[6]"></a>GetButtonPressed</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NormalGameplay
+<LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StandBy
+</UL>
+
+<P><STRONG><a name="[7]"></a>SetLEDS</STRONG> (Thumb, 80 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Calls]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLED4
+<LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLED3
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLED2
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLED1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Loser
+<LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Winner
+<LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NormalGameplay
+</UL>
+
+<P><STRONG><a name="[8]"></a>SetLED1</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLEDS
+<LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StandBy
+</UL>
+
+<P><STRONG><a name="[9]"></a>SetLED2</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLEDS
+<LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StandBy
+</UL>
+
+<P><STRONG><a name="[a]"></a>SetLED3</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLEDS
+<LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StandBy
+</UL>
+
+<P><STRONG><a name="[b]"></a>SetLED4</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLEDS
+<LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StandBy
+</UL>
+
+<P><STRONG><a name="[c]"></a>UnsetLED1</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NormalGameplay
+</UL>
+
+<P><STRONG><a name="[d]"></a>UnsetLED2</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NormalGameplay
+</UL>
+
+<P><STRONG><a name="[e]"></a>UnsetLED3</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NormalGameplay
+</UL>
+
+<P><STRONG><a name="[f]"></a>UnsetLED4</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NormalGameplay
+</UL>
+
+<P><STRONG><a name="[10]"></a>LEDOFF</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Loser
+<LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Winner
+<LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NormalGameplay
+<LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StandBy
+</UL>
+
+<P><STRONG><a name="[11]"></a>ConfigClock</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[12]"></a>ConfigGPIO</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[13]"></a>counter</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Loser
+<LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Winner
+<LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NormalGameplay
+<LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StandBy
+</UL>
+
+<P><STRONG><a name="[14]"></a>timer</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Winner
+<LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NormalGameplay
+<LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StandBy
+</UL>
+
+<P><STRONG><a name="[15]"></a>randomNumber</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, proj.o(MYCODE))
+<BR><BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Winner
+<LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NormalGameplay
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>
